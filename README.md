@@ -7,11 +7,11 @@
 
 Ini adalah Todo App seperti biasanya, tetapi saya disini menggunakan Cloud Firestore sebagai Databasenya
 
-## Tampilan Screenshot dan Video
+## Tampilan Screenshot
 ![image](https://github.com/herbayulet/Todo-App-Firebase/assets/61405169/f7b2d401-d8ec-4877-bbdf-8717ad2733f7)
-[Screencast from 2023-09-11 23-05-42.webm](https://github.com/herbayulet/Todo-App-Firebase/assets/61405169/d7065b75-2562-4bac-aa19-e1c89a5d3b3a)
 
-
+## Rekaman Video
+[Screencast from 2023-09-11 23-11-29.webm](https://github.com/herbayulet/Todo-App-Firebase/assets/61405169/2838ee9d-1a4b-443e-801b-4d459e6ed305)
 
 
 ## Fitur
@@ -20,7 +20,6 @@ Ini adalah Todo App seperti biasanya, tetapi saya disini menggunakan Cloud Fires
 - Create Data
 - Update Data
 - Delete Data
->>>>>>> 94180c4e9c8a8eee6befc8dd69ad669594cb3928
 
 ## Teknologi Terkait
 
