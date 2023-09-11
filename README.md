@@ -5,25 +5,13 @@
 ![GitHub issues](https://img.shields.io/github/issues/herbayulet/Todo-App-Firebase)
 ![GitHub license](https://img.shields.io/github/license/herbayulet/Todo-App-Firebase)
 
-<<<<<<< HEAD
-Deskripsi singkat proyek Anda di sini. Anda dapat mencakup tujuan utama proyek ini dan teknologi yang digunakan.
-
-## Tampilan Screenshot
-
-Tambahkan beberapa tangkapan layar dari aplikasi Anda di sini, jika memungkinkan.
-
-## Fitur
-
-- Daftar fitur utama dari aplikasi Anda.
-- Misalnya, Tambah, Edit, Hapus tugas.
-- Filter tugas berdasarkan status.
-- dll.
-=======
 Ini adalah Todo App seperti biasanya, tetapi saya disini menggunakan Cloud Firestore sebagai Databasenya
 
 ## Tampilan Screenshot
-![image](https://github.com/herbayulet/Todo-App-Firebase/assets/61405169/527ff369-1719-4abe-8188-5005eb513857)
+![image](https://github.com/herbayulet/Todo-App-Firebase/assets/61405169/f7b2d401-d8ec-4877-bbdf-8717ad2733f7)
 
+## Rekaman Video
+[Screencast from 2023-09-11 23-11-29.webm](https://github.com/herbayulet/Todo-App-Firebase/assets/61405169/2838ee9d-1a4b-443e-801b-4d459e6ed305)
 
 
 ## Fitur
@@ -32,7 +20,6 @@ Ini adalah Todo App seperti biasanya, tetapi saya disini menggunakan Cloud Fires
 - Create Data
 - Update Data
 - Delete Data
->>>>>>> 94180c4e9c8a8eee6befc8dd69ad669594cb3928
 
 ## Teknologi Terkait
 
@@ -46,16 +33,9 @@ Ini adalah Todo App seperti biasanya, tetapi saya disini menggunakan Cloud Fires
 
 Langkah-langkah untuk menjalankan aplikasi ini secara lokal. Berikan contoh kode atau perintah yang diperlukan.
 
-```bash
-# Install dependensi
-<<<<<<< HEAD
-npm install
 
 # Jalankan aplikasi
-npm start
-=======
 yarn install
 
 # Jalankan aplikasi
 yarn start/expo start
->>>>>>> 94180c4e9c8a8eee6befc8dd69ad669594cb3928
