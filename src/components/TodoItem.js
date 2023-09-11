@@ -48,7 +48,7 @@ const TodoItem = ({ item, doc, db, deleteDoc, reloadData, updateDoc }) => {
             />
           )}
         </Pressable>
-        <Text>{item?.name}</Text>
+        <Text className={`${isChecked === true && "line-through text-red-500"}`}>{item?.name}</Text>
       </View>
       <View className="flex-row items-center justify-end">
         <Pressable onPress={deleteTodo}>

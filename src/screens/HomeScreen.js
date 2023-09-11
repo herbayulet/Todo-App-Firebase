@@ -25,10 +25,6 @@ const HomeScreen = () => {
     deleteDoc,
     getListTodo,
   } = useHomeScreen();
-
-  todo.forEach((data) => {
-    console.log(data);
-  })
   return (
     <View className="w-full flex-1 bg-slate-700">
       <StatusBar style="light" />
