@@ -18,6 +18,8 @@ const HomeScreen = () => {
     todo,
     name,
     setName,
+    age,
+    setAge,
     addTodos,
     db,
     doc,
@@ -25,6 +27,8 @@ const HomeScreen = () => {
     deleteDoc,
     getListTodo,
   } = useHomeScreen();
+
+
   return (
     <View className="w-full flex-1 bg-slate-700">
       <StatusBar style="light" />
@@ -54,14 +58,25 @@ const HomeScreen = () => {
             <Text className="text-white text-center">Tidak ada Task</Text>
           )}
         </View>
-        <View className="mt-40 bg-neutral-500 w-full rounded-xl p-3">
+        <View className="mt-40 bg-neutral-500 w-full rounded-xl space-y-3 p-3">
           <KeyboardAvoidingView>
             <TextInput
               className="px-2 text-lg text-white"
-              placeholder="Task anda"
+              placeholder="Nama "
               placeholderTextColor="#FFFFFF"
               value={name}
               onChangeText={(text) => setName(text)}
+            />
+            
+          </KeyboardAvoidingView>
+          <View className="border-b-2 border-white"></View>
+          <KeyboardAvoidingView>
+          <TextInput
+              className="px-2 text-lg text-white"
+              placeholder="Umur"
+              placeholderTextColor="#FFFFFF"
+              value={age}
+              onChangeText={(text) => setAge(text)}
             />
           </KeyboardAvoidingView>
         </View>

@@ -13,16 +13,19 @@ import { Alert } from "react-native";
 const useHomeScreen = () => {
   const [todo, setTodo] = useState([]);
   const [name, setName] = useState("");
+  const [age, setAge] = useState("")
 
   // Menambah Todo
   const addTodos = async () => {
     try {
       const res = await addDoc(collection(db, "todoList"), {
         name: name,
+        age: age,
         isChecked: false,
       });
       Alert.alert("Berhasil disimpan");
       setName("");
+      setAge("")
     } catch (error) {
       Alert.alert(error.message);
     }
@@ -33,12 +36,14 @@ const useHomeScreen = () => {
   const getListTodo = async () => {
     try {
       const query = await getDocs(collection(db, "todoList"));
-      setTodo(
-        query.docs.map((doc) => ({
+      const filteredTodo = query.docs
+        .map((doc) => ({
           ...doc.data(),
           id: doc.id,
         }))
-      );
+        // .filter((item) => item.age <= 22); // Filter client-side
+  
+      setTodo(filteredTodo);
     } catch (error) {
       Alert.alert(error.message);
     }
@@ -46,10 +51,10 @@ const useHomeScreen = () => {
 
 
   useEffect(() => {
-    getListTodo();
+    getListTodo()
   }, []);
 
-  return { todo, name, setName, addTodos, db, doc, updateDoc, deleteDoc, getListTodo };
+  return { todo, name, setName, age, setAge, addTodos, db, doc, updateDoc, deleteDoc, getListTodo };
 };
 
 export default useHomeScreen;
